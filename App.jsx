@@ -31,7 +31,7 @@ export default function App() {
           name="Hair"
           component={Hair}
           options={{
-            title: "Cabelo",
+            title: "Cabelos",
             headerStyle: {
               backgroundColor: "#E0E0E0",
             },
