@@ -4,6 +4,8 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import Home from './src/screen/Home';
 import Hair from './src/screen/Hair';
+import Beard from './src/screen/Beard';
+import AboutMe from './src/screen/AboutMe';
 
 export default function App() {
  const Stack = createNativeStackNavigator();
@@ -28,10 +30,42 @@ export default function App() {
         />
 
         <Stack.Screen
+          name="AboutMe"
+          component={AboutMe}
+          options={{
+            title: "Sobre mim",
+            headerStyle: {
+              backgroundColor: "#E0E0E0",
+            },
+            headerTintColor: "#000",
+            headerTitleStyle: {
+              fontWeight: "bold",
+            },
+            
+          }}
+        />
+
+        <Stack.Screen
           name="Hair"
           component={Hair}
           options={{
             title: "Cabelos",
+            headerStyle: {
+              backgroundColor: "#E0E0E0",
+            },
+            headerTintColor: "#000",
+            headerTitleStyle: {
+              fontWeight: "bold",
+            },
+            
+          }}
+        />
+
+        <Stack.Screen
+          name="Beard"
+          component={Beard}
+          options={{
+            title: "Barba",
             headerStyle: {
               backgroundColor: "#E0E0E0",
             },
