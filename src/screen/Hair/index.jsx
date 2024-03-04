@@ -1,7 +1,6 @@
-import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
-
+import { View, Text, TouchableOpacity } from "react-native";
+import styles from "./styles";
 import { useNavigation } from "@react-navigation/native";
-
 
 export default function Hair() {
     const navigation = useNavigation()
@@ -16,19 +15,3 @@ export default function Hair() {
     </View>
   )
 }
-
-const styles = StyleSheet.create({
-    container: {
-      flex: 1,
-      backgroundColor: "#F5FCFF",
-      alignItems: "center",
-      justifyContent: "center",
-    },
-    navButton: {
-      marginTop: 20,
-      padding: 10,
-      backgroundColor: "lightgray",
-      color: "black",
-      borderRadius: 5,
-    },
-  });

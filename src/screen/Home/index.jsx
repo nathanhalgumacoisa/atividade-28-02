@@ -1,5 +1,5 @@
-import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
-
+import { View, Text, TouchableOpacity } from "react-native";
+import styles from "./styles";
 import { useNavigation } from "@react-navigation/native";
 import { Image } from "react-native-web";
 
@@ -47,25 +47,3 @@ export default function Home() {
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#eee2b4",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-
-  navButton: {
-    marginTop: 20,
-    padding: 10,
-    backgroundColor: "#ab9680",
-    color: "black",
-    borderRadius: 5,
-  },
-
-  img: {
-    width: 200,
-    height: 100,
-  }
-});
