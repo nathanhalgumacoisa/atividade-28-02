@@ -6,6 +6,9 @@ import Home from './src/screen/Home';
 import Hair from './src/screen/Hair';
 import Beard from './src/screen/Beard';
 import AboutMe from './src/screen/AboutMe';
+import Caesar from './src/screen/Caesar';
+import Fade from './src/screen/Fade';
+import Undercut from './src/screen/undercut';
 
 export default function App() {
  const Stack = createNativeStackNavigator();
@@ -35,9 +38,9 @@ export default function App() {
           options={{
             title: "Sobre mim",
             headerStyle: {
-              backgroundColor: "#E0E0E0",
+              backgroundColor: "#7c3b1a",
             },
-            headerTintColor: "#000",
+            headerTintColor: "#fff",
             headerTitleStyle: {
               fontWeight: "bold",
             },
@@ -51,9 +54,9 @@ export default function App() {
           options={{
             title: "Cabelos",
             headerStyle: {
-              backgroundColor: "#E0E0E0",
+              backgroundColor: "#7c3b1a",
             },
-            headerTintColor: "#000",
+            headerTintColor: "#fff",
             headerTitleStyle: {
               fontWeight: "bold",
             },
@@ -67,9 +70,57 @@ export default function App() {
           options={{
             title: "Barba",
             headerStyle: {
-              backgroundColor: "#E0E0E0",
+              backgroundColor: "#7c3b1a",
             },
-            headerTintColor: "#000",
+            headerTintColor: "#fff",
+            headerTitleStyle: {
+              fontWeight: "bold",
+            },
+            
+          }}
+        />
+
+        <Stack.Screen
+          name="Caesar"
+          component={Caesar}
+          options={{
+            title: "Caesar",
+            headerStyle: {
+              backgroundColor: "#7c3b1a",
+            },
+            headerTintColor: "#fff",
+            headerTitleStyle: {
+              fontWeight: "bold",
+            },
+            
+          }}
+        />
+
+        <Stack.Screen
+          name="Fade"
+          component={Fade}
+          options={{
+            title: "Fade",
+            headerStyle: {
+              backgroundColor: "#7c3b1a",
+            },
+            headerTintColor: "#fff",
+            headerTitleStyle: {
+              fontWeight: "bold",
+            },
+            
+          }}
+        />
+
+        <Stack.Screen
+          name="Undercut"
+          component={Undercut}
+          options={{
+            title: "Undercut",
+            headerStyle: {
+              backgroundColor: "#7c3b1a",
+            },
+            headerTintColor: "#fff",
             headerTitleStyle: {
               fontWeight: "bold",
             },
